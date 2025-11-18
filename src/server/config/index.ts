@@ -1,0 +1,1 @@
+export { default as connectToDatabase } from './db-connect.config.ts'
