@@ -1,13 +1,17 @@
 {
-    "extends": "./tsconfig.json",
-    "compilerOptions": {
-        "outDir": "./dist-server",
-        "module": "ESNext",
-        "moduleResolution": "Node",
-        "target": "ES2020",
-        "esModuleInterop": true
-    },
-    "include": [
-        "src/server/**/*"
-    ]
+  "compilerOptions": {
+    "outDir": "dist-server",
+    "rootDir": "src/server",
+
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "NodeNext",
+
+    "esModuleInterop": true,
+    "strict": true,
+
+    "noEmitOnError": true,
+    "skipLibCheck": true
+  },
+  "include": ["src/server/**/*"]
 }
