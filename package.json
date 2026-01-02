@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon -w src/server -x tsx src/server/main.ts",
-    "start": "cross-env NODE_ENV=production tsx src/server/main.ts",
-    "build": "vite build"
+    "build": "vite build && tsc -p tsconfig.server.json",
+    "start": "node dist-server/main.js"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.10.1",
@@ -32,6 +32,7 @@
     "react-dom": "^19.1.0",
     "react-hot-toast": "^2.6.0",
     "react-redux": "^9.2.0",
+    "react-router-dom": "^7.11.0",
     "react-slick": "^0.31.0",
     "slick-carousel": "^1.8.1",
     "swiper": "^12.0.3",
