@@ -3,7 +3,7 @@ import ViteExpress from "vite-express";
 import cors from "cors";
 import dotenv from "dotenv";
 import cookieParser from "cookie-parser";
-import { connectToDatabase } from "./config/index.ts";
+import { connectToDatabase } from "./config/index.js";
 
 dotenv.config();
 
